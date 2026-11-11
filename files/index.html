@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JalurJaringan – Peta Karier Network untuk Pemula</title>
+  <meta name="description" content="Kenali profesi, skill, dan langkah awal berkarier di bidang jaringan komputer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#beranda">JalurJaringan</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav id="mainNav" class="main-nav" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#profesi">Profesi</a>
+      <a href="#skill">Skill</a>
+      <a href="#langkah">Langkah belajar</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+      <div class="hero-text">
+        <h1>Dari kabel sampai cloud, jaringan selalu butuh orang yang paham.</h1>
+        <p>Kenali profesi, skill, dan langkah awal untuk berkarier di bidang jaringan komputer, bahkan kalau kamu baru mulai.</p>
+        <a class="btn" href="#profesi">Lihat profesi jaringan</a>
+      </div>
+    </section>
+
+    <!-- PROFESI -->
+    <section class="section" id="profesi">
+      <h2>Empat profesi, empat cara bekerja dengan jaringan</h2>
+      <div class="tabs" role="tablist" aria-label="Pilih profesi">
+        <button role="tab" id="tab-ne" aria-selected="true" aria-controls="panel-ne" data-role="ne">Network Engineer</button>
+        <button role="tab" id="tab-na" aria-selected="false" aria-controls="panel-na" data-role="na" tabindex="-1">Network Administrator</button>
+        <button role="tab" id="tab-noc" aria-selected="false" aria-controls="panel-noc" data-role="noc" tabindex="-1">NOC Engineer</button>
+        <button role="tab" id="tab-nse" aria-selected="false" aria-controls="panel-nse" data-role="nse" tabindex="-1">Network Security Engineer</button>
+      </div>
+
+      <article class="panel" id="panel-ne" role="tabpanel" aria-labelledby="tab-ne">
+        <p class="lead">Merancang dan membangun jaringan, dari kantor kecil sampai kampus.</p>
+        <dl class="detail">
+          <dt>Tugas</dt><dd>Merancang topologi, mengonfigurasi router dan switch, mengatur routing dan VLAN.</dd>
+          <dt>Tools</dt><dd>Cisco Packet Tracer, GNS3, Wireshark, MikroTik WinBox.</dd>
+          <dt>Jalur karier</dt><dd>Junior Network Engineer → Network Engineer → Senior Engineer → Network Architect.</dd>
+        </dl>
+      </article>
+
+      <article class="panel" id="panel-na" role="tabpanel" aria-labelledby="tab-na" hidden>
+        <p class="lead">Menjaga jaringan harian tetap berjalan dan terkelola.</p>
+        <dl class="detail">
+          <dt>Tugas</dt><dd>Mengelola akun dan hak akses, memantau perangkat, memperbarui firmware, mendokumentasikan jaringan.</dd>
+          <dt>Tools</dt><dd>Winbox, SNMP monitoring, Zabbix, Active Directory.</dd>
+          <dt>Jalur karier</dt><dd>IT Support → Network Administrator → IT Infrastructure Manager.</dd>
+        </dl>
+      </article>
+
+      <article class="panel" id="panel-noc" role="tabpanel" aria-labelledby="tab-noc" hidden>
+        <p class="lead">Mengawasi kondisi jaringan selama jam kerja atau 24 jam.</p>
+        <dl class="detail">
+          <dt>Tugas</dt><dd>Memantau dashboard, menangani insiden, mengeskalasi gangguan ke tim terkait, mencatat tiket.</dd>
+          <dt>Tools</dt><dd>Grafana, Nagios, PRTG, sistem tiket seperti Jira Service Management.</dd>
+          <dt>Jalur karier</dt><dd>NOC Operator → NOC Engineer → Network Engineer atau NOC Lead.</dd>
+        </dl>
+      </article>
+
+      <article class="panel" id="panel-nse" role="tabpanel" aria-labelledby="tab-nse" hidden>
+        <p class="lead">Melindungi jaringan dari akses dan serangan yang tidak sah.</p>
+        <dl class="detail">
+          <dt>Tugas</dt><dd>Mengatur firewall, VPN, dan IDS/IPS, menganalisis log, menguji celah keamanan.</dd>
+          <dt>Tools</dt><dd>pfSense, Fortinet, Wireshark, Nmap, Snort.</dd>
+          <dt>Jalur karier</dt><dd>Network Engineer → Network Security Engineer → Security Architect.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- SKILL -->
+    <section class="section alt" id="skill">
+      <h2>Yang perlu kamu kuasai</h2>
+      <div class="two-col">
+        <div>
+          <h3>Hard skill</h3>
+          <ul>
+            <li>Konfigurasi router dan switch</li>
+            <li>Subnetting dan routing</li>
+            <li>Keamanan jaringan dasar</li>
+            <li>Sertifikasi CCNA atau CompTIA Network+</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft skill</h3>
+          <ul>
+            <li>Komunikasi dengan tim dan pengguna</li>
+            <li>Pemecahan masalah secara runtut</li>
+            <li>Kerja tim saat insiden</li>
+            <li>Kemauan belajar teknologi baru</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGKAH (urutan nyata, jadi bernomor) -->
+    <section class="section" id="langkah">
+      <h2>Langkah belajar dari nol</h2>
+      <ol class="steps">
+        <li><strong>Pahami dasar.</strong> Model OSI, TCP/IP, alamat IP, dan subnetting.</li>
+        <li><strong>Praktik di lab.</strong> Bangun topologi di Packet Tracer atau GNS3.</li>
+        <li><strong>Ambil sertifikasi.</strong> Mulai dari CompTIA Network+ atau CCNA.</li>
+        <li><strong>Pilih arah.</strong> Operasional, desain, atau keamanan, lalu perdalam.</li>
+        <li><strong>Ikuti tren.</strong> Pelajari otomasi jaringan dan cloud networking.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="tentang">
+    <p><strong>JalurJaringan</strong> adalah landing page studi kasus tugas Pengantar TI dan TIK (TMJ102).</p>
+    <p>Kelompok 5 · TMJ 1A · Politeknik Negeri Jakarta · 2026/2027</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
