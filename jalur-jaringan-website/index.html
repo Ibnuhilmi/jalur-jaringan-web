@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Header Meta Tag (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:;">
+    <meta name="description" content="JalurJaringan - Peta Karier IT & Teknologi Berbasis Web. Panduan interaktif profesi jaringan komputer untuk mahasiswa TMJ PNJ.">
+    <title>JalurJaringan - Peta Karier IT & Teknologi Berbasis Web</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to Content for Accessibility -->
+    <a href="#main-content" class="skip-link">Lompat ke Konten Utama</a>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                <span>JalurJaringan</span>
+            </a>
+            
+            <button class="mobile-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Buka Menu Navigasi">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#profesi" class="nav-link">Profesi</a></li>
+                    <li><a href="#skill" class="nav-link">Skill</a></li>
+                    <li><a href="#langkah-belajar" class="nav-link">Langkah Belajar</a></li>
+                    <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Politeknik Negeri Jakarta &bull; Kelompok 5</span>
+                    <h1>Peta Karier IT &amp; Teknologi Berbasis Web</h1>
+                    <p class="hero-subtitle">
+                        Panduan praktis bagi mahasiswa &amp; pemula untuk memahami prospek kerja, profesi utama, kompetensi, dan langkah belajar di bidang jaringan komputer &amp; web siber.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#profesi" class="btn btn-primary">Jelajahi Profesi</a>
+                        <a href="#langkah-belajar" class="btn btn-secondary">Langkah Belajar &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-card-preview">
+                    <div class="stat-card">
+                        <div class="stat-number">#1</div>
+                        <div class="stat-label">Networking &amp; Cybersecurity teratas dalam WEF Future of Jobs Report</div>
+                    </div>
+                    <div class="stat-card accent">
+                        <div class="stat-number">4 Utama</div>
+                        <div class="stat-label">Profesi Kunci: Network Engineer, Admin, NOC, &amp; Security</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Profesi (Interactive Tabs) -->
+        <section id="profesi" class="section profesi-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Profesi di Bidang Jaringan</h2>
+                    <p>Pilih profesi di bawah ini untuk melihat rincian tugas, kompetensi, perangkat (tools), serta alur jalur kariernya.</p>
+                </div>
+
+                <!-- Tab Controls -->
+                <div class="tab-list" role="tablist" aria-label="Pilihan Profesi Jaringan">
+                    <button role="tab" aria-selected="true" aria-controls="panel-ne" id="tab-ne" data-role="ne" tabindex="0">Network Engineer</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-na" id="tab-na" data-role="na" tabindex="-1">Network Administrator</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-noc" id="tab-noc" data-role="noc" tabindex="-1">NOC Engineer</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-nse" id="tab-nse" data-role="nse" tabindex="-1">Network Security Engineer</button>
+                </div>
+
+                <!-- Tab Panels -->
+                <!-- Panel 1: Network Engineer -->
+                <div id="panel-ne" role="tabpanel" aria-labelledby="tab-ne" class="tab-panel active">
+                    <div class="profesi-card">
+                        <div class="profesi-card-header">
+                            <h3>Network Engineer</h3>
+                            <span class="role-tag">Merancang &amp; Mengoptimalkan Infrastruktur</span>
+                        </div>
+                        <div class="profesi-grid">
+                            <div class="profesi-box">
+                                <h4>Tugas Utama</h4>
+                                <p>Merancang, membangun, mengonfigurasi, dan mengoptimalkan jaringan kabel maupun nirkabel; melakukan troubleshooting mendalam dan meningkatkan kinerja throughput jaringan.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Kompetensi Kunci</h4>
+                                <p>TCP/IP, IP Subnetting, Routing, Switching, Virtual LAN (VLAN), Virtual Private Network (VPN), dan analisis arsitektur jaringan.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Tools &amp; Software</h4>
+                                <ul class="tags-list">
+                                    <li>Cisco Packet Tracer</li>
+                                    <li>Wireshark</li>
+                                    <li>PuTTY</li>
+                                    <li>Router &amp; Switch</li>
+                                </ul>
+                            </div>
+                            <div class="profesi-box full-width">
+                                <h4>Jalur Karier</h4>
+                                <div class="career-path">
+                                    <span>Junior Network Engineer</span> &rarr; 
+                                    <strong>Network Engineer</strong> &rarr; 
+                                    <span>Senior Network Engineer</span> &rarr; 
+                                    <span class="badge-highlight">Network Architect</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: Network Administrator -->
+                <div id="panel-na" role="tabpanel" aria-labelledby="tab-na" class="tab-panel hidden">
+                    <div class="profesi-card">
+                        <div class="profesi-card-header">
+                            <h3>Network Administrator</h3>
+                            <span class="role-tag">Pemeliharaan &amp; Operasional Harian</span>
+                        </div>
+                        <div class="profesi-grid">
+                            <div class="profesi-box">
+                                <h4>Tugas Utama</h4>
+                                <p>Mengelola operasional jaringan harian, memelihara router dan switch, mengatur hak akses pengguna, memeriksa konektivitas, serta menangani gangguan rutin.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Kompetensi Kunci</h4>
+                                <p>Konfigurasi LAN/WAN, IP Addressing, administrasi sistem (Windows/Linux Server), manajemen akun pengguna, dan troubleshooting harian.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Tools &amp; Software</h4>
+                                <ul class="tags-list">
+                                    <li>Wireshark</li>
+                                    <li>PuTTY</li>
+                                    <li>Monitoring Tools</li>
+                                    <li>Active Directory</li>
+                                </ul>
+                            </div>
+                            <div class="profesi-box full-width">
+                                <h4>Jalur Karier</h4>
+                                <div class="career-path">
+                                    <span>IT Support / Network Tech</span> &rarr; 
+                                    <strong>Network Administrator</strong> &rarr; 
+                                    <span>Senior Network Admin</span> &rarr; 
+                                    <span class="badge-highlight">Network Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: NOC Engineer -->
+                <div id="panel-noc" role="tabpanel" aria-labelledby="tab-noc" class="tab-panel hidden">
+                    <div class="profesi-card">
+                        <div class="profesi-card-header">
+                            <h3>NOC Engineer (Network Operations Center)</h3>
+                            <span class="role-tag">Monitoring 24/7 &amp; Penanganan Insiden</span>
+                        </div>
+                        <div class="profesi-grid">
+                            <div class="profesi-box">
+                                <h4>Tugas Utama</h4>
+                                <p>Memantau kondisi dan kinerja jaringan secara terus-menerus, menangani alarm sistem, menguji log gangguan awal, serta meneruskan tiket insiden kepada tim eskalasi.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Kompetensi Kunci</h4>
+                                <p>Monitoring sistem &amp; jaringan, analisis log, pemahaman protokol SNMP/ICMP, troubleshooting awal, dokumentasi insiden, dan komunikasi tim.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Tools &amp; Software</h4>
+                                <ul class="tags-list">
+                                    <li>Zabbix</li>
+                                    <li>PRTG Network Monitor</li>
+                                    <li>Nagios</li>
+                                    <li>Sistem Ticketing</li>
+                                </ul>
+                            </div>
+                            <div class="profesi-box full-width">
+                                <h4>Jalur Karier</h4>
+                                <div class="career-path">
+                                    <span>NOC Technician / Operator</span> &rarr; 
+                                    <strong>NOC Engineer</strong> &rarr; 
+                                    <span>Senior NOC Engineer</span> &rarr; 
+                                    <span class="badge-highlight">NOC Team Lead / Operations Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: Network Security Engineer -->
+                <div id="panel-nse" role="tabpanel" aria-labelledby="tab-nse" class="tab-panel hidden">
+                    <div class="profesi-card">
+                        <div class="profesi-card-header">
+                            <h3>Network Security Engineer</h3>
+                            <span class="role-tag">Proteksi &amp; Keamanan Siber Jaringan</span>
+                        </div>
+                        <div class="profesi-grid">
+                            <div class="profesi-box">
+                                <h4>Tugas Utama</h4>
+                                <p>Merancang dan menerapkan sistem pertahanan siber jaringan, mengelola Firewall &amp; VPN, memantau ancaman intrusi, menguji kerentanan, serta merespons insiden keamanan.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Kompetensi Kunci</h4>
+                                <p>Keamanan Jaringan, Firewall Rules, IPSec/SSL VPN, IDS/IPS (Suricata/Snort), Segmentasi Jaringan, Vulnerability Scanning, dan Kriptografi.</p>
+                            </div>
+                            <div class="profesi-box">
+                                <h4>Tools &amp; Software</h4>
+                                <ul class="tags-list">
+                                    <li>Wireshark</li>
+                                    <li>Next-Gen Firewall</li>
+                                    <li>Suricata / Snort</li>
+                                    <li>SIEM (Splunk / Wazuh)</li>
+                                </ul>
+                            </div>
+                            <div class="profesi-box full-width">
+                                <h4>Jalur Karier</h4>
+                                <div class="career-path">
+                                    <span>Junior Security Engineer</span> &rarr; 
+                                    <strong>Network Security Engineer</strong> &rarr; 
+                                    <span>Senior Security Engineer</span> &rarr; 
+                                    <span class="badge-highlight">Security Architect / Security Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Skill -->
+        <section id="skill" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Keterampilan yang Dibutuhkan (Hard Skill &amp; Soft Skill)</h2>
+                    <p>Kombinasi keahlian teknis dan kemampuan nonteknis berdasarkan rekomendasi World Economic Forum (WEF).</p>
+                </div>
+                
+                <div class="skill-grid">
+                    <!-- Hard Skill Card -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon hard">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"></path><path d="M8 6L2 12l6 6"></path></svg>
+                        </div>
+                        <h3>Hard Skill (Teknis)</h3>
+                        <ul class="skill-list">
+                            <li><strong>Dasar Jaringan:</strong> TCP/IP, IP Addressing, Subnetting, LAN/WAN.</li>
+                            <li><strong>Konfigurasi Perangkat:</strong> Routing, Switching, VLAN, Router &amp; Switch.</li>
+                            <li><strong>Monitoring &amp; Troubleshooting:</strong> Analisis log, Wireshark, Zabbix.</li>
+                            <li><strong>Keamanan &amp; Scripting:</strong> Firewall, VPN, IDS/IPS, Linux OS, Python Automation.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skill Card -->
+                    <div class="skill-card">
+                        <div class="skill-card-icon soft">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+                        </div>
+                        <h3>Soft Skill (Non-Teknis)</h3>
+                        <ul class="skill-list">
+                            <li><strong>Berpikir Analitis:</strong> Menelusuri masalah teknis secara runtut dan sistematis.</li>
+                            <li><strong>Berpikir Kreatif &amp; Agilitas:</strong> Cepat beradaptasi terhadap insiden di bawah tekanan.</li>
+                            <li><strong>Kolaborasi &amp; Komunikasi:</strong> Bekerja sama secara efektif dalam tim IT/NOC.</li>
+                            <li><strong>Lifelong Learning:</strong> Semangat belajar mandiri mengikuti tren AI &amp; Cloud.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Langkah Belajar -->
+        <section id="langkah-belajar" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>5 Langkah Tahapan Belajar</h2>
+                    <p>Alur sistematis untuk membangun karier profesional di bidang Jaringan dan Web IT.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <h3>Kuasai Fondasi Dasar Jaringan</h3>
+                            <p>Pelajari konsep TCP/IP, model OSI, IP Addressing (IPv4/IPv6), dan latihan subnetting sampai lancar.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <h3>Simulasi &amp; Konfigurasi Perangkat</h3>
+                            <p>Gunakan Cisco Packet Tracer untuk mengonfigurasi Routing, Switching, VLAN, dan DHCP server.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-number">3</div>
+                        <div class="timeline-content">
+                            <h3>Analisis Trafik &amp; Monitoring</h3>
+                            <p>Gunakan Wireshark untuk menganalisis paket data dan Zabbix/PRTG untuk pemantauan kesehatan server/jaringan.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-number">4</div>
+                        <div class="timeline-content">
+                            <h3>Keamanan Jaringan &amp; Linux Scripting</h3>
+                            <p>Pelajari pengolahan Firewall rules, VPN, dasar Linux administration, serta otomatisasi sederhana menggunakan Python.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-number">5</div>
+                        <div class="timeline-content">
+                            <h3>Adopsi Teknologi Web, Cloud &amp; Agentic AI</h3>
+                            <p>Pahami interaksi web dinamis, dasar Cloud (AWS/GCP), serta pemanfaatan AI Agent sebagai asisten produktivitas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section tentang / Footer -->
+        <section id="tentang" class="section bg-dark text-white">
+            <div class="container">
+                <div class="tentang-grid">
+                    <div class="tentang-info">
+                        <h3>Tentang Proyek Makalah PTIK</h3>
+                        <p>Website ini dikembangkan sebagai bentuk penerapan praktis dari Makalah berjudul <strong>"Prospek Karier IT dan Teknologi Berbasis Web"</strong> pada mata kuliah Pengantar TI dan TIK (2026/2027).</p>
+                        <p><strong>Dosen Pengampu:</strong> Dwi Ermawati, M.T.</p>
+                        <p><strong>Program Studi:</strong> Teknik Multimedia dan Jaringan &bull; Politeknik Negeri Jakarta (PNJ)</p>
+                    </div>
+
+                    <div class="kelompok-box">
+                        <h4>Anggota Kelompok 5:</h4>
+                        <ul>
+                            <li>Fardhan Octobryan Rahardjo (NIM: 2607421006)</li>
+                            <li>Lutpi Sahrul Muzakar (NIM: 2607421028)</li>
+                            <li>M. Aly Fikry Al Hakiki (NIM: 2607421003)</li>
+                            <li>Ibnu Hilmi (NIM: 2607421004)</li>
+                            <li>Muhammad Zaki Zein (NIM: 2607421006)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Kelompok 5 PTIK - Teknik Multimedia dan Jaringan PNJ. Built with Semantic HTML5, Modern CSS &amp; Vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
